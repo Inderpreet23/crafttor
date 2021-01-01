@@ -1,0 +1,31 @@
+{
+  "name": "Crafttor for Sketch",
+  "description": "Pick exclusive illustrations by Crafttor",
+  "author": "Inderpreet Singh",
+  "authorEmail": "preetsinghh23@gmail.com",
+  "homepage": "https://github.com/Inderpreet23/crafttor.git",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "Crafttor",
+      "identifier": "crafttor.main",
+      "script": "./main.js",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "Shutdown": "onShutdown"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Crafttor",
+    "isRoot": true,
+    "items": [
+      "crafttor.main"
+    ]
+  }
+}
